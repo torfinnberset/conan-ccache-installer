@@ -5,7 +5,7 @@ from conans import ConanFile, AutoToolsBuildEnvironment, tools
 
 class LcovConan(ConanFile):
     name = "ccache_installer"
-    version = "3.7.2"
+    version = "3.7.3"
     license = "GPL3"
     author = "Torfinn Berset <torfinn@bloomlife.com>"
     url = "https://github.com/torfinnberset/conan-ccache-installer"
@@ -17,7 +17,8 @@ class LcovConan(ConanFile):
     _filename = F"ccache-{version}"
 
     _version_sha256 = {
-        "3.7.2": "a5da0008512ff9e882097acaffb3616fae98ec25827167bb4bd1e4acf0b66793"
+        "3.7.2": "a5da0008512ff9e882097acaffb3616fae98ec25827167bb4bd1e4acf0b66793",
+        "3.7.3": "73d2ec69fcf4fd3b956304036974a779b443d88882b69c5d81b62b5dc8630e04"
     }
 
     def source(self):
