@@ -3,9 +3,9 @@ import os
 from conans import ConanFile, AutoToolsBuildEnvironment, tools
 
 
-class LcovConan(ConanFile):
+class CcacheConan(ConanFile):
     name = "ccache_installer"
-    version = "3.7.3"
+    version = "3.7.4"
     license = "GPL3"
     author = "Torfinn Berset <torfinn@bloomlife.com>"
     url = "https://github.com/torfinnberset/conan-ccache-installer"
@@ -18,7 +18,8 @@ class LcovConan(ConanFile):
 
     _version_sha256 = {
         "3.7.2": "a5da0008512ff9e882097acaffb3616fae98ec25827167bb4bd1e4acf0b66793",
-        "3.7.3": "73d2ec69fcf4fd3b956304036974a779b443d88882b69c5d81b62b5dc8630e04"
+        "3.7.3": "73d2ec69fcf4fd3b956304036974a779b443d88882b69c5d81b62b5dc8630e04",
+        "3.7.4": "04c0af414b8cf89e541daed59735547fbfd323b1aaa983da0216f6b6731e6836",
     }
 
     def source(self):
